@@ -180,7 +180,7 @@ to{border-right-color: transparent;}
   height:215px;
   width:205px;
 }
-al
+AL
 
 #nick {
   height: 345px;
@@ -194,7 +194,7 @@ al
 }
 
 .nicktxt{
-  margin-top: 16px;
+  margin-top: 13px;
 }
 
 #sev{
@@ -209,7 +209,7 @@ al
 }
 
 .sevtxt{
-  margin-top:0px;
+  margin-top:5px;
 }
 /* POOR BRIAN */
 #brian{
@@ -227,7 +227,7 @@ al
 
 
 .briantxt{
-  margin-top:27px;
+  margin-top:5px;
 }
 /* POOR BRIAN END */
 
