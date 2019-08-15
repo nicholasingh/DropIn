@@ -1,0 +1,170 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Oswald', sans-serif !important;
+}
+
+.logo {
+  line-height: 40px;
+  float: left;
+  margin: 1.2em 0 0 4em;
+  font-weight: bolder;
+  color: black;
+}
+#navbarspan {
+color: #ff7890;
+font-weight: bolder;
+}
+.nav {
+  line-height: 40px;
+  margin: 1.2em;
+  position: absolute;
+  right: 0;
+}
+.nav li {
+display: inline-block;
+color: black;
+padding-right: 36px;
+font-weight: bolder;
+}
+.nav li:hover{
+  color:white;
+}
+.nav ul {
+  list-style: none;
+  display: inline-block;
+  color: black;
+  padding-right: 36px;
+}
+
+body {
+  background: linear-gradient(to left top, #ff7890, #FFB8C5, #FFB8C5, #fff) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  margin-left: -64.5px;
+  margin-top: -85.5px;
+}
+
+.ghost {
+  animation: float 1s ease-out infinite;
+  top: 10%;
+  left: 100%;
+}
+
+@keyframes float {
+  50% {
+     transform: translate(0, 20px);
+  }
+}
+.shadowFrame {
+  width: 130px;
+  margin-top: 15px;
+}
+.shadow {
+  color: #ff7890;
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+  ellipse {
+    transform-origin: center center;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+input[type=text], select, textarea {
+  background-color: #fdb0be;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(15, 15, 15);
+  opacity: 1; /* Firefox */
+}
+
+input[type=text]:hover{
+  border: solid white;
+  /* background-color:white; */
+}
+
+#subject:hover{
+  border: solid white;
+  /* background-color: white; */
+}
+
+input[type=submit] {
+  cursor: pointer;
+  margin-top: 12px;
+  border: none;
+  padding: 16px 40px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: #000;
+  filter: drop-shadow(0 0 0.75rem black)
+  letter-spacing: 4px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+input[type=submit]:hover {
+  border: none;
+  background-color: white;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#contact-heading{
+  text-align: center;
+}
+.alert{
+text-align: center;
+padding: 10px;
+background: #fff;
+color: #000;
+margin-bottom: 10px;
+margin-left: 16.5%; 
+border-radius: 5px;
+margin-top: 60px;
+width: 855px;
+display: none ;
+}
+@font-face{
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v24/TK3iWkUHHAIjg752Fz8Ghe4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}

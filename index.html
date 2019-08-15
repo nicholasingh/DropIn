@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="icon" href="logo (2).png">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>DropIn | Home</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+      <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+            <script> src="https://use.fontawesome.com/releases/v5.10.1/js/all.js"</script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+<body>
+
+      <div class="overlay">
+            <h1>WELCOME TO</h1>
+      </div>
+
+      <div class="wrapper">
+            <div class="logo">Drop<span id="navbarspan">in</span></div>
+            <div class="nav">
+                  <ul class="pages">
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="explore.html"><li>Explore</li></a>
+                        <a href = "about.html"><li>About Us</li></a>
+                        <a href = "contact.html"><li>Contact</li></a>
+                        <a href = "sign.html"><li>Sign in</li></a>
+                  </ul>
+            </div>
+            <div class="social-media">
+                  <ul>
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                  </ul>
+            </div>
+            <div class="side-strip">
+                  <span>NO LIMITATIONS</span>
+            </div>
+            <div class="header">
+                  <h1 class="head">DropIn - Let us lead you <br>to success</h1>
+                  <p>A solution with enough flexibility for "drop outs" to access opportunities they may have never been unaware of.</p>
+                  <button onclick="location.href='sign.html'" type="button">Join us</button>
+
+            </div>
+            </div>
+            <nav role="navigation">
+                  <div id="menuToggle">
+                    <input type="checkbox" />
+                
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                      <a href="index.html" class="hamburger"><li>Home</li></a>
+                      <a href="explore.html" class="humburger"><li>Explore</li></a>
+                      <a href="about.html" class="humburger"><li>About us</li></a>
+                      <a href="contact.html" class="humburger"><li>Contact</li></a>
+                      <a href="sign.html" class="humburger"><li>Sign in</li></a>
+                    </ul>
+                  </div>
+                </nav>
+
+
+
+
+
+      <!-- OVERLAY TRANSITION -->
+
+      <script type="text/javascript">
+      TweenMax.to(".overlay h1", 2, {
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.to(".overlay", 2, {
+            delay: 1,
+            top: "-100%",
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".logo", 1, {
+            delay: 2.4,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom(".nav ul li", 1, {
+            delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
+      }, 0.2)
+
+      TweenMax.staggerFrom(".social-media ul li", 1, {
+            delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
+      }, 0.2)
+
+      TweenMax.from(".side-strip", 2, {
+            delay: 2.4,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".row", 2, {
+            delay: 2.4,
+            opacity: 0,
+            x: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".row h6", 2, {
+            delay: 3,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".row p", 2, {
+            delay: 3.2,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".header h1", 2, {
+            delay: 3.2,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".header p", 2, {
+            delay: 3.4,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".header button", 2, {
+            delay: 3.6,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      })
+      </script>
+
+      <!-- END OF OVERLAY TRANSITION -->
+      <script src="index.js"></script>
+</body>
+</html>

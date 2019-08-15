@@ -1,0 +1,326 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+body {
+    background: linear-gradient(to left top, #ff7890, #FFB8C5, #FFB8C5, #fff) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo {
+    line-height: 40px;
+    float: left;
+    margin: 1.2em 0 0 4em;
+    font-weight: bolder;
+    color: black;
+}
+#navbarspan {
+color: #ff7890;
+font-weight: bolder;
+}
+.nav {
+    line-height: 40px;
+    margin: 1.2em;
+    position: absolute;
+    right: 0;
+}
+.nav li {
+display: inline-block;
+color: black;
+padding-right: 36px;
+font-weight: bolder;
+}
+.nav li:hover{
+    color:white;
+}
+.nav ul {
+    list-style: none;
+    display: inline-block;
+    color: black;
+    padding-right: 36px;
+}
+
+.social-media {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social-media ul li {
+    list-style: none;
+    color: black;
+    padding-top: 20px;
+}
+
+.side-strip {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -3em;
+    transform: rotate(90deg);
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
+h1{
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 40px
+}
+
+h3{
+  font-weight: bold;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  box-align: center;
+  border-radius: 15%;
+  border-style: none;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 15%;
+  border-style: none;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15%;
+  border-style: none;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  color: black;
+  border-radius: 15%;
+  border-style: none;
+}
+
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #3D9970;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.row{
+  display: inline-flex;
+
+}
+
+.col{
+  margin-left: 150px;
+  margin-bottom: 100px;
+}
+
+.flip-card-back a{
+  text-decoration: none;
+  color: white;
+}
+
+.heading{
+  margin-bottom: 100px;
+}
+
+.row a{
+  color: violet;
+}
+
+@media(max-width:1280px){
+  .menu{
+        display:none;
+  }
+}
+
+@media(max-width:1024px){
+  /* .header{
+      margin-top: 200px;
+      right: 100px;
+  } */
+  html{
+        width: 320px;
+        height: 640px;
+  }
+
+  .logo{
+        font-size: 45px;
+        margin-left: 900px;
+  }
+  .pages{
+        display: none !important;
+  }
+  .menu{
+        display: inline;
+  }
+  .header{
+        top: 260px;
+  }
+  .heading{
+    font-size: 100px;
+    margin-left: 290px;
+  }
+  .row{
+    display:flex;
+    flex-direction: column;
+  }
+}
+
+
+a {
+  color: inherit;
+}
+h2, h3, h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 3em;
+}
+.menu {
+  filter: url('#shadowed-goo');
+}
+.menu-item, .menu-open-button {
+  background: #080808;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  margin-left: -45px;
+  position: absolute;
+  top: 30px;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 200ms;
+}
+.menu-open {
+  display: none;
+}
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -1.5px;
+  transition: transform 200ms;
+}
+.hamburger-1 {
+  transform: translate3d(0, -8px, 0);
+}
+.hamburger-2 {
+  transform: translate3d(0, 0, 0);
+}
+.hamburger-3 {
+  transform: translate3d(0, 8px, 0);
+}
+.menu-open:checked + .menu-open-button .hamburger-1 {
+  transform: translate3d(0, 0, 0) rotate(45deg);
+}
+.menu-open:checked + .menu-open-button .hamburger-2 {
+  transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+.menu-open:checked + .menu-open-button .hamburger-3 {
+  transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+.menu {
+  position: absolute;
+  left: 50%;
+  margin-left: -500px;
+  padding-top: 40px;
+  padding-left: 80px;
+  width: 650px;
+  height: 150px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: left;
+}
+.menu-item:hover {
+  background: white;
+  color: #00bcd4;
+}
+.menu-item:nth-child(3) {
+  transition-duration: 180ms;
+}
+.menu-item:nth-child(4) {
+  transition-duration: 180ms;
+}
+.menu-item:nth-child(5) {
+  transition-duration: 180ms;
+}
+.menu-item:nth-child(6) {
+  transition-duration: 180ms;
+}
+.menu-open-button {
+  z-index: 2;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 400ms;
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+}
+.menu-open-button:hover {
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+.menu-open:checked + .menu-open-button {
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+.menu-open:checked ~ .menu-item {
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  transition-duration: 190ms;
+  transform: translate3d(10rem, 0, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  transition-duration: 290ms;
+  transform: translate3d(20rem, 0, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  transition-duration: 390ms;
+  transform: translate3d(30rem, 0, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  transition-duration: 490ms;
+  transform: translate3d(40rem, 0, 0);
+}

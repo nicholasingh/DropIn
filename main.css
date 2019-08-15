@@ -1,0 +1,353 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Oswald', sans-serif !important;
+}
+
+body {
+      background: linear-gradient(to left top, #ff7890, #FFB8C5, #FFB8C5, #fff) no-repeat 50% 50%;
+      background-size: cover;
+      background-attachment: fixed;
+}
+
+.logo {
+      line-height: 40px;
+      float: left;
+      margin: 1.2em 0 0 4em;
+      margin-bottom: -30px;
+      font-weight: bolder;
+      color: black;
+}
+#navbarspan {
+  color: #ff7890;
+  font-weight: bolder;
+}
+.nav {
+      line-height: 40px;
+      margin: 1.2em;
+      position: absolute;
+      right: 0;
+}
+.nav li {
+  display: inline-block;
+  color: black;
+  padding-right: 36px;
+  font-weight: bolder;
+}
+.nav li:hover{
+      color:white;
+}
+.nav ul {
+      list-style: none;
+      display: inline-block;
+      color: black;
+      padding-right: 36px;
+}
+
+.social-media {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+}
+
+.social-media ul li {
+      list-style: none;
+      color: black;
+      padding-top: 20px;
+}
+
+.side-strip {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -3em;
+      transform: rotate(90deg);
+      color: black;
+      font-weight: bolder;
+      letter-spacing: 4px;
+}
+
+.header {
+      position: absolute;
+      top: 38%;
+      left: 46%;
+      transform: translate(-50%, -50%);
+}
+
+.header h1 {
+      color: black;
+      font-weight: bolder;
+}
+
+.header p {
+      color: black;
+      font-weight: 100vh;
+}
+
+.header button {
+      margin-top: 12px;
+      border: none;
+      padding: 16px 40px;
+      background: transparent;
+      border: 1px solid black;
+      border-radius: 20px;
+      color: #000;
+      filter: drop-shadow(0 0 0.75rem black)
+      letter-spacing: 4px;
+      font-weight: 600;
+      font-size: 12px;
+}
+
+.overlay {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      top: 0%;
+}
+
+.overlay h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      font-weight: bolder;
+      letter-spacing: 12px;
+}
+
+button:hover{
+      background-color: white;
+      color: black;
+}
+
+#contact{
+      padding-bottom: 10px;
+}
+
+/* HAMBURGER SPIN */
+
+
+/* Contact Us Page Styling */
+
+input[type=text], select, textarea {
+      background: transparent;
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */
+      border: 1px solid; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+
+input[type=text]:hover{
+      border: solid white;
+      /* background-color:white; */
+}
+
+#subject:hover{
+      border: solid white;
+      /* background-color: white; */
+}
+
+input[type=submit] {
+      cursor: pointer;
+      margin-top: 12px;
+      border: none;
+      padding: 16px 40px;
+      background: transparent;
+      border: 1px solid black;
+      border-radius: 20px;
+      color: #000;
+      filter: drop-shadow(0 0 0.75rem black)
+      letter-spacing: 4px;
+      font-weight: 600;
+      font-size: 12px;
+}
+
+input[type=submit]:hover {
+      border: none;
+      background-color: white;
+}
+
+.container {
+      border-radius: 5px;
+      padding: 20px;
+}
+
+#contact-heading{
+      text-align:center;
+}
+
+@font-face{
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/oswald/v24/TK3iWkUHHAIjg752Fz8Ghe4.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background-color: #fff;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 500px;
+  height: 700px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background-color: whitesmoke;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+@media(max-width: 1280px){
+      #menuToggle{
+            display:none;
+      }
+}
+
+@media(max-width: 360px){
+      #menuToggle{
+            display: block;
+            float:left;
+            margin-top: 1%;
+      }
+      .header{
+            top:45%;
+      }
+      .pages{
+            display: none !important;
+      }
+      .logo{
+            margin-right: 25%;
+            margin-top: 13%;
+      }
+}

@@ -1,0 +1,398 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Oswald', sans-serif !important;
+}
+
+body {
+  background: linear-gradient(to left top, #ff7890, #FFB8C5, #FFB8C5, #fff) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  /* align-content: space-around; */
+  /* align-items: flex-end; */
+  /* flex-direction: row; */
+}
+.logo {
+  line-height: 40px;
+  float: left;
+  margin: 1.2em 0 0 4em;
+  font-weight: bolder;
+  color: black;
+}
+#navbarspan {
+color: #ff7890;
+font-weight: bolder;
+}
+.nav {
+  line-height: 40px;
+  margin: 1.2em;
+  position: absolute;
+  right: 0;
+}
+.nav li {
+display: inline-block;
+color: black;
+padding-right: 36px;
+font-weight: bolder;
+}
+.nav li:hover{
+  color:white;
+}
+.nav ul {
+  list-style: none;
+  display: inline-block;
+  color: black;
+  padding-right: 36px;
+}
+/* Typewriter Animation */
+body {
+  background-color: white;
+}
+.line-1{
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  margin-left: 13%;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  color: rgb(255, 0, 212);
+}
+
+
+/* Animation */
+.anim-typewriter{
+animation: typewriter 2.5s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 18em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+
+/* TEAM CARD */
+.demo{ background: pink; }
+.container{
+  margin-left: 55px;
+  margin-top: 6%;
+}
+
+/* Meet the Team */
+.meetTeam{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 100px;
+  margin-block-start: 1em;
+  margin-block-end: .01em;
+}
+
+/* Curly Brace */
+#curly-brace
+{
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 1580px;
+}
+
+.brace
+{
+  border-bottom: 5px solid;
+  margin: 0 10%;
+  width: 30%;
+  height: 20px;
+  float: left;
+}
+
+.brace:before,
+.brace:after
+{
+  content: "";
+  width: 10%;
+  height: 50px;
+  position: absolute;
+  display: block;
+}
+
+#left:before
+{
+  border-bottom: 5px solid;
+  border-bottom-left-radius: 20px;
+  margin-left: -10%;
+  margin-top: -30px;
+}
+
+#left:after
+{
+  border-top: 5px solid;
+  border-top-right-radius: 20px;
+  margin-left: 30%;
+  margin-top: 20px;
+}
+
+#right:before
+{
+  border-top: 5px solid;
+  border-top-left-radius: 20px;
+  margin-left: -10%;
+  margin-top: 20px;
+}
+
+#right:after
+{
+  border-bottom: 5px solid;
+  border-bottom-right-radius: 20px;
+  margin-left: 30%;
+  margin-top: -30px;
+}
+.our-team{
+    padding: 20px 15px 30px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px;
+    width: 200px;
+}
+.our-team .pic{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 0px;
+    margin-bottom: 25px;
+    transition: all 0.5s ease 0s;
+}
+#al{
+  height: 345px;
+}
+#alpic {
+  height:215px;
+  width:205px;
+}
+al
+
+#nick {
+  height: 345px;
+}
+
+#nickpic > img{
+  height: 205px;
+}
+#nickpic > img{
+  height: 200px;
+}
+
+.nicktxt{
+  margin-top: 16px;
+}
+
+#sev{
+  height: 345px;
+}
+#sevpic{
+  height: 205px;
+}
+
+#sevpic > img{
+  height: 200px
+}
+
+.sevtxt{
+  margin-top:0px;
+}
+/* POOR BRIAN */
+#brian{
+  height: 345px;
+}
+#brianpic{
+  height: 205px;
+}
+
+#brianpic > img{
+  height: 200px;
+  width: 200px;
+
+}
+
+
+.briantxt{
+  margin-top:27px;
+}
+/* POOR BRIAN END */
+
+.our-team:hover .pic{
+    background: pink;
+    border-radius: 50%;
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.our-team .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.our-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.our-team .social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.our-team .social li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: pink;
+    border: 1px solid pink;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social li a{
+    background: pink;
+    color: #fff;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+
+.container{
+  display: inline-flex;
+}
+
+.infotitle{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size:70px;
+  margin-block-start: 5em;
+  margin-block-end: .01em;
+  margin-top: 0;
+}
+
+.compinfotxt{
+  border: 2px solid black ;
+  border-radius: 25px;
+  padding: 5px;
+  height: 300px;
+  width: 570px;
+  margin-top: 95px;
+  margin-right : 80px;
+  margin-left: 40px;
+}
+
+.infotitle > h1{
+  font-size: 60px;
+  margin-right: 100px;
+  margin-left: 120px;
+  margin-bottom: 0px;
+  margin-top: 150px;
+}
+
+.comppic-txt{
+  display:inline-flex ;
+  margin-top: 500px;
+
+}
+
+#crewpic{
+  height: 500px;
+  width: 550px;
+  margin-right: 40px;
+  border-radius: 25px;
+  margin-bottom: 100px;
+}
+
+#droptitle{
+  text-align: center;
+
+}
+
+/* TABLET */
+@media(max-width: 641px) {
+  body{
+    width: 100%;
+  }
+  .line-1{
+    top: 300px;
+  }
+  .comppic-txt{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .compinfotxt{
+    height: 380px;
+    margin-bottom: 20px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .all{
+    display: flex;
+    flex-direction: column;
+  }
+} 
+
+/*-- SMALL DESKTOP --*/
+@media(max-width: 768px) {
+  body{
+    width: 100%;
+  }
+  .line-1{
+    top: 300px;
+  }
+  .comppic-txt{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .compinfotxt{
+    height: 380px;
+    margin-bottom: 20px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .all{
+    display: flex;
+    flex-direction: column;
+  }
+} 
+w
+/*-- DESKTOP --*/
+@media(min-width: 992px) {
+
+} 
+/*-- BIG DESKTOP (rarely used, but can be useful) --*/
+@media(min-width: 1280px) {
+
+} 
